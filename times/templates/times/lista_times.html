@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Times de Futebol</title>
+</head>
+<body>
+    <h1>Lista de Times ⚽</h1>
+
+    <ul>
+        {% for time in times %}
+            <li>
+                <strong>{{ time.nome }}</strong> - {{ time.cidade }} ({{ time.fundacao }})
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
